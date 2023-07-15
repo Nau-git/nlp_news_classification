@@ -5,7 +5,7 @@ import pandas as pd
 
 st.title("News Classification")
 
-@st.cache(allow_output_mutation=True)
+@st.cache_resource
 def teachable_machine_classification(text, weights_file):
     # Load the model
     #model = tf.saved_model.load(weights_file)
